@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="css/style.css" /> <!-- adding CSS file -->
+  <!-- adding CSS files -->
+  <link rel="stylesheet" href="css/style.css" /> 
+  <link rel="stylesheet" href="css/main.css" />
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -30,6 +32,7 @@
 
   <div class="container">
 
+    <!-- this section show both front and back credit card images, with the wrinting info -->
     <section class="card-display">
       
       <div class="card-front">
@@ -37,8 +40,9 @@
         <img class="card-logo" src="./images/card-logo.svg">
         <p class="card-number-display">0000 0000 0000 0000</p>
         <p class="card-holder-display">Jane Appleseed</p>
-        <p class="expiration-month-display"></p>
-        <p class="expiration-year-display">0000</p>
+        <p class="expiration-month-display">00</p>
+        <p class="expiration-divider-display">/</p>
+        <p class="expiration-year-display">00</p>
       </div>
 
       <div class="card-back">
@@ -48,6 +52,7 @@
 
     </section>
 
+    <!-- this section contains the form where user will fill up credit card data -->
     <section class="card-details">
       <form action="/action_page.php" id="myForm" name="myForm">
        
