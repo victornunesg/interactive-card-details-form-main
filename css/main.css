@@ -143,9 +143,51 @@ form {
 
 label {
     display: block;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 500;
     margin-bottom: 3px;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+label .card-number, label .expiration-date, label .cvc {
+    margin-top: 30px;
+}
+
+/* Check later if is necessary
+input {
+    outline: 0px solid hsl(249, 99%, 64%);
+    border-top-color: hsl(249, 99%, 64%);
+    border-right-color: hsl(278, 94%, 30%);
+    border-bottom-color: hsl(249, 99%, 64%);
+    border-left-color: hsl(278, 94%, 30%);
+} */
+
+input::placeholder {
+    font-weight: 300;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+#errorMsg, #card-num-error, #expiration-error, #error-cvc {
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 2px;
+    padding-left: 2px;
+    letter-spacing: 1px;
+}
+
+.flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .expiration {
+    width: 90px;
+    margin-right: 5px;
+}
+
+.flex .cvc {
+    width: 130px;
 }
